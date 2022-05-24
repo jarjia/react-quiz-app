@@ -2,7 +2,7 @@ import React from 'react'
 import Quiz from './Quiz'
 import {nanoid} from "nanoid"
 import './style.css'
-
+//hey its me marioo
 export default function Main(props) {
     const [data, setData] = React.useState([])
     const [start, setStart] = React.useState(true)
