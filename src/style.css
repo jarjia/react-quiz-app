@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+.start {
+    height: 90vh;
+    display: flex;
+}
+.start-quiz {
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+}
+.start-h1 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 37px;
+    text-align: center;
+    color: #293264;
+}
+.start-h4 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #293264;
+    line-height: 24px;
+    margin: 15px 50px;
+}
+.start-btn {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #F5F7FB;
+    background: #4D5B9E;
+    border-radius: 15px;
+    border: none;
+    width: 190px;
+    height: 52px;
+    cursor: pointer;
+}
+.quiz-wrapper {
+    margin: 20px;
+    border-bottom: 0.794239px solid lightgray;
+    transform: rotate(-0.05deg);
+    padding-bottom: 30px; 
+}
+.quiz-h2 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: #293264;
+}
+.check {
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #4D5B9E;
+    border-radius: 7.94239px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #293264;
+    user-select: none;
+}
+.quiz-div {
+    display: flex;
+}
+.check-btn {
+    border: none;
+    background: #4D5B9E;
+    border-radius: 10px;
+    width: 140px;
+    height: 45px;   
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px; 
+    cursor: pointer;
+}
+.check-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.p {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    margin: auto 10px;
+    text-align: right;
+    color: #293264;
+}
+.number-inp {
+    margin: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    min-width: 200px;
+    height: 30px;
+    border: 1px solid rgb(10, 10, 10);
+}
+.num-label {
+    font-family: sans-serif;
+    font-size: 18px;
+    position: relative;
+    
+}
+.input {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+.input-wrapper {
+    height: 96vh;
+}
+.submit-btn {
+    border: none;
+    background: #4D5B9E;
+    color: white;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
