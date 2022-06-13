@@ -2,12 +2,11 @@ import React from 'react'
 import Quiz from './Quiz'
 import {nanoid} from "nanoid"
 import './style.css'
-//hey its me marioo
+
 export default function Main(props) {
     const [data, setData] = React.useState([])
     const [start, setStart] = React.useState(true)
     const [endGame, setEndgame] = React.useState(false)
-    const [everySelect, setEverySelect] = React.useState(false)
     const [count, setCount] = React.useState(0)
 
     React.useEffect(() => {
@@ -34,12 +33,12 @@ export default function Main(props) {
                         isWrong: false
                     }
                 })
+                setStart(false) 
                 return item
             }))
-            setStart(false) 
         }
         function playAgain() {
-            window.location.reload(false);
+            window.location.reload(false)
         }
 
         function selectAnswer(answers, id) {
@@ -75,7 +74,7 @@ export default function Main(props) {
             }))
             setEndgame(true)
         }
-        
+
         let display = data.map(item => {
             return <Quiz 
                 key={nanoid()} 
@@ -93,7 +92,7 @@ export default function Main(props) {
                 <div className="start-quiz">
                     <h1 className="start-h1">Quizzical</h1>
                     <h4 className='start-h4'>Please wait a second before clicking start</h4>
-                    <button className="start-btn" onClick={toggleStart}>Start Quiz</button>
+                    <button className="btn start-btn" onClick={toggleStart}>Start Quiz</button>
                 </div>
             </div> :
             <div className="main">
@@ -103,9 +102,9 @@ export default function Main(props) {
                         endGame ?
                         <>
                             <p className="p">{`You scored ${count}/5 correct answers`}</p>
-                            <button className="check-btn" onClick={playAgain}>Play again</button> 
+                            <button className="btn check-btn" onClick={playAgain}>Play again</button> 
                         </> : 
-                        <button className="check-btn" onClick={check}>Check</button>
+                        <button className="btn check-btn" onClick={check}>Check Answers</button>
                     }
                 </div>        
             </div>

@@ -32,13 +32,14 @@ export default function Quiz(props) {
             style={styles}
             className="check"
             onClick={() => props.click(answers, item)}
-        >{item.value}</div>
+            dangerouslySetInnerHTML={{__html: item.value}}
+        ></div>
     })
 
     return (
         <div className="quiz">
             <div className="quiz-wrapper">
-                <h2 className="quiz-h2">{props.task}</h2>
+                <h2 className="quiz-h2" dangerouslySetInnerHTML={{__html: props.task}}></h2>
                 <div className='quiz-div'>
                     {displayAnswers}
                 </div>
